@@ -24,4 +24,4 @@ s3_client = session.client(
 )
 
 for file in files:
-    s3_client.upload_file(f"results/{file}", "private-jets", f"analysis/v1/{file}", ExtraArgs={'ACL':'public-read'})
+    s3_client.upload_file(f"results/{file}", "private-jets", f"analysis/v1/{file}", ExtraArgs={'ACL':'public-read', 'ContentType': 'text/csv'})
