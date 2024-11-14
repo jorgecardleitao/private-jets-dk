@@ -196,13 +196,7 @@ COPY (
 )
 TO 'results/by_model_year.csv' (HEADER, DELIMITER ',');
 
-SELECT 'by_day.csv' AS "table"
-UNION ALL
-SELECT 'by_month.csv' AS "table"
-UNION ALL
-SELECT 'by_year.csv' AS "table"
-UNION ALL
-SELECT 'by_country_day.csv'
+SELECT 'by_country_day.csv' AS "table"
 UNION ALL
 SELECT 'by_country_month.csv'
 UNION ALL
